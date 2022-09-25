@@ -13,6 +13,7 @@ def main():
 
     my_object = MyClass('Thomas')
     my_object.say_name()
+    my_object.makeModel('Talk')
 
 if __name__ == '__main__':
     main()
