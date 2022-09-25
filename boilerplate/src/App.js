@@ -4,6 +4,14 @@ import AppModel from "./models/App/AppModel.js";
 import './App.css';
 
 const app_model = new AppModel(); 
+
+/* Sample Route Code
+-------------------------------------
+      <Route path="/"
+        element={<GameWrapper numCards={12}
+          content={"color"}
+          appModel={app_model} />} />
+*/
 function App() {
   return (
     <div className="App">
