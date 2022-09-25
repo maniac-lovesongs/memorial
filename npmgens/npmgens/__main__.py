@@ -12,8 +12,10 @@ def main():
     my_function('hello world')
 
     my_object = MyClass('Thomas')
-    my_object.say_name()
+    #my_object.say_name()
     my_object.makeModel('Talk')
+    my_object.makeJSComponent('Talk')
+    my_object.makeSCSSComponent('Talk')
 
 if __name__ == '__main__':
     main()
