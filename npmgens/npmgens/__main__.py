@@ -16,6 +16,8 @@ def main():
     elif len(args) > 1 and args[0] == '--model': 
         my_object = NPMGens('')
         my_object.makeModel(name)
+    else:
+        print("Please enter between 1 and 2 arguments")
 
 if __name__ == '__main__':
     main()

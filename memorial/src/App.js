@@ -15,7 +15,7 @@ const app_model = new AppModel();
 function App() {
   return (
     <div className="App">
-      <h1>Boilerplate</h1>
+      <h1>Dad's Memorial</h1>
       <Routes>
       </Routes>
     </div>

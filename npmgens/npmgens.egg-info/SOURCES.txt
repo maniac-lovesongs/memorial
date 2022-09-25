@@ -1,4 +1,5 @@
 README.md
+setup.py
 npmgens/__init__.py
 npmgens/__main__.py
 npmgens/classmodule.py

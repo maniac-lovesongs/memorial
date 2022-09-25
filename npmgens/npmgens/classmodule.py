@@ -1,12 +1,12 @@
 import os
-BASE_PATH = '/root/boilerplate'
+BASE_PATH = '/root/dad'
 
 class NPMGens():
     def __init__(self, name):
         self.name = name
         self.NPMGENS = BASE_PATH + '/npmgens/'
-        self.MODEL_PATH = BASE_PATH + '/boilerplate/src/models/'
-        self.COMPONENT_PATH = BASE_PATH + '/boilerplate/src/components/'
+        self.MODEL_PATH = BASE_PATH + '/memorial/src/models/'
+        self.COMPONENT_PATH = BASE_PATH + '/memorial/src/components/'
     
     def makeModel(self,modelName):
         f = open(self.NPMGENS + "/templates/model.txt")
