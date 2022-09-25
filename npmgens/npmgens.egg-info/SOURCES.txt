@@ -1,0 +1,10 @@
+README.md
+npmgens/__init__.py
+npmgens/__main__.py
+npmgens/classmodule.py
+npmgens/funcmodule.py
+npmgens.egg-info/PKG-INFO
+npmgens.egg-info/SOURCES.txt
+npmgens.egg-info/dependency_links.txt
+npmgens.egg-info/entry_points.txt
+npmgens.egg-info/top_level.txt
