@@ -15,6 +15,7 @@ const app_model = new AppModel();
 function App() {
   return (
     <div className="App">
+      <h1>Boilerplate</h1>
       <Routes>
       </Routes>
     </div>

@@ -4,6 +4,7 @@ npmgens.egg-info/
 
 # dependencies
 /node_modules
+/npmgens
 /.pnp
 .pnp.js
 

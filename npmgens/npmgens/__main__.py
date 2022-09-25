@@ -1,5 +1,5 @@
 import sys
-from .classmodule import MyClass
+from .classmodule import NPMGens
 from .funcmodule import my_function
 
 def main():
@@ -8,14 +8,14 @@ def main():
     print('count of args :: {}'.format(len(args)))
     for arg in args:
         print('passed argument :: {}'.format(arg))
+    
 
-    my_function('hello world')
-
-    my_object = MyClass('Thomas')
-    #my_object.say_name()
-    my_object.makeModel('Talk')
-    my_object.makeJSComponent('Talk')
-    my_object.makeSCSSComponent('Talk')
+    if len(args) == 1:
+        my_object = NPMGens(args[0])
+        my_object.makeComponent()
+    elif len(args) > 1 and args[0] == '--model': 
+        my_object = NPMGens('')
+        my_object.makeModel(name)
 
 if __name__ == '__main__':
     main()
