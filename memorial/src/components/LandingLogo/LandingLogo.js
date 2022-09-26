@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from 'react';
-import LandingLogo from "../LandingLogo/LandingLogo.js";
-import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
-import "./Landing.scss";
+import LandingLogoCharacter from '../LandingLogoCharacter/LandingLogoCharacter.js';
+import "./LandingLogo.scss";
 
-const Landing = (input) => {
+const LandingLogo = (input) => {
+
     const [modelListenerId, setModelListenerId] = useState(null);
     useEffect(() => {
         const tempId = input.model.registerListener((propsChanged) => {
@@ -15,20 +15,22 @@ const Landing = (input) => {
             setModelListenerId(null);
         }
     }, []);
-    
 
+    const makeChars = () => {
+        return input.string.split("").map((ch, i) => {
+            return <LandingLogoCharacter
+                char={ch}
+                index={i}
+                model={input.model} />
+        });
+    }
     return (
-        <div className="landing-container">
-            <LandingLogo 
-                model={input.model}
-                string="Norman Peter Gonsalves"
-            />
-            <FadingHorizontalRule
-                model={input.model}
-            />
+        <div className="landinglogo-container"
+            data-string={input.string}>
+            {makeChars()}
         </div>
     );
 }
 
-export default Landing;
+export default LandingLogo;
 /***************************************************************/

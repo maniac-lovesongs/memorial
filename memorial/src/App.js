@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { Route, Routes, useParams } from "react-router-dom";
+import Landing from "./components/Landing/Landing.js";
 import AppModel from "./models/App/AppModel.js";
 import './App.css';
 
@@ -15,7 +16,9 @@ const app_model = new AppModel();
 function App() {
   return (
     <div className="App">
-      <h1>Dad's Memorial</h1>
+      <Landing
+        model={app_model}
+      />
       <Routes>
       </Routes>
     </div>

@@ -1,9 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import LandingLogo from "../LandingLogo/LandingLogo.js";
-import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
-import "./Landing.scss";
+import "./FadingHorizontalRule.scss";
 
-const Landing = (input) => {
+const FadingHorizontalRule = (input) => {
+
     const [modelListenerId, setModelListenerId] = useState(null);
     useEffect(() => {
         const tempId = input.model.registerListener((propsChanged) => {
@@ -18,17 +17,10 @@ const Landing = (input) => {
     
 
     return (
-        <div className="landing-container">
-            <LandingLogo 
-                model={input.model}
-                string="Norman Peter Gonsalves"
-            />
-            <FadingHorizontalRule
-                model={input.model}
-            />
+        <div className="fadinghorizontalrule-container">
         </div>
     );
 }
 
-export default Landing;
+export default FadingHorizontalRule;
 /***************************************************************/

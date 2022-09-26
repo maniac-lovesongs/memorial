@@ -10,7 +10,7 @@ const REACT_COMPONENT = (input) => {
         setModelListenerId(tempId);
 
         return function cleanup() {
-            input.model.unregisterListener(appListenerId);
+            input.model.unregisterListener(modelListenerId);
             setModelListenerId(null);
         }
     }, []);
