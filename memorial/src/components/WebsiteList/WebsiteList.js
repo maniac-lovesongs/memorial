@@ -6,10 +6,6 @@ import plainwaterImg from "../../imgs/plainwater.png";
 import theGonsalvesImg from "../../imgs/thegonsalves.png";
 import "./WebsiteList.scss";
 
-console.log(guyanaCricketImg);
-console.log(plainwaterImg);
-console.log(theGonsalvesImg);
-
 const WebsiteList = (input) => {
 
     const [modelListenerId, setModelListenerId] = useState(null);
@@ -24,9 +20,9 @@ const WebsiteList = (input) => {
         }
     }, []);
     const makeList = () => {
-        const items = [new WebsiteCardModel("plainwater.com", plainwaterImg),
-        new WebsiteCardModel("guyana-cricket.com", guyanaCricketImg),
-        new WebsiteCardModel("thegonsalves.com",theGonsalvesImg)
+        const items = [new WebsiteCardModel("plainwater.com", plainwaterImg, "https://plainwater.com"),
+        new WebsiteCardModel("guyana-cricket.com", guyanaCricketImg, "https://guyana-cricket.com"),
+        new WebsiteCardModel("thegonsalves.com",theGonsalvesImg, "https://thegonsalves.com")
         ];
 
         return items.map((c, i) => {

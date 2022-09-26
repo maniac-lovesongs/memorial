@@ -1,10 +1,7 @@
 /**************************************************************/
-class WebsiteCardModel {
-    constructor(name,image,link) {
+class LoadingModel {
+    constructor() {
         this.listeners = [];
-        this.name = name;
-        this.image = image; 
-        this.link = link; 
     }
     /***************************************************************/
     unregisterListener(id) {
@@ -28,4 +25,4 @@ class WebsiteCardModel {
     }
 }
 
-export default WebsiteCardModel; 
+export default LoadingModel; 

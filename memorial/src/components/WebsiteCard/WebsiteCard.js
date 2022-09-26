@@ -6,8 +6,7 @@ import "./WebsiteCard.scss";
 import { fontFamily } from '@mui/system';
 
 const WebsiteCard = (input) => {
-    console.log("image passed into WebsiteCard");
-    console.log(input.image);
+
     const [modelListenerId, setModelListenerId] = useState(null);
     useEffect(() => {
         const tempId = input.model.registerListener((propsChanged) => {
@@ -24,21 +23,30 @@ const WebsiteCard = (input) => {
     const cardMediaStyles = {
         height: "200px",
         margin: '1em',
+        borderRadius: '5px',
         marginBottom: '0em'
     };
 
     const cardContentStyles = {
         fontFamily: "'Montserrat', sans-serif",
         fontWeight: "300",
-        padding: "1.5em",
+        fontSize: "0.9em",
+        padding: "2em",
         textTransform: "uppercase"
     };
 
     const cardStyles = {
         backgroundColor: 'white',
         borderRadius: '0em',
+        borderRadius: '15px',
         boxShadow: "rgba(0, 0, 0, 0.15) 0px 0px 25px 0px",
         transition: "all 0.3s ease 0s"
+    };
+
+    const iconStyles = {
+        position: "relative",
+        top: "5px",
+        left: "-10px"
     };
     return (
         <Card
@@ -52,6 +60,7 @@ const WebsiteCard = (input) => {
                 sx={cardContentStyles}
             >
                 {input.websiteName}
+
             </CardContent>
         </Card>
     );
