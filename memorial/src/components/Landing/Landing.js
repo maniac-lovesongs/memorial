@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import LandingLogo from "../LandingLogo/LandingLogo.js";
-import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
+//import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
+import LandingLogo from "./LandingLogo/LandingLogo.js";
 import WebsiteList from '../WebsiteList/WebsiteList.js';
 import "./Landing.scss";
 
@@ -24,13 +24,7 @@ const Landing = (input) => {
                 model={input.model}
                 string="Norman Peter Gonsalves"
             />
-            <FadingHorizontalRule
-                model={input.model}
-            />
             <WebsiteList
-                model={input.model}
-            />
-            <FadingHorizontalRule
                 model={input.model}
             />
         </div>
@@ -38,4 +32,3 @@ const Landing = (input) => {
 }
 
 export default Landing;
-/***************************************************************/

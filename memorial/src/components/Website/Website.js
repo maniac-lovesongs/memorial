@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import "./LandingLogoCharacter.scss";
+import Landing from "../Landing/Landing.js";
+import "./Website.scss";
 
-const LandingLogoCharacter = (input) => {
+const Website = (input) => {
 
     const [modelListenerId, setModelListenerId] = useState(null);
     useEffect(() => {
@@ -17,15 +18,13 @@ const LandingLogoCharacter = (input) => {
     
 
     return (
-        <span
-            key={input.index}
-            data-id={input.index}
-            data-value={input.char}
-            className="landinglogocharacter-container">
-            {input.char}
-        </span>
+        <div className="website-container">
+            <Landing 
+                model={input.model}
+            />
+        </div>
     );
 }
 
-export default LandingLogoCharacter;
+export default Website;
 /***************************************************************/

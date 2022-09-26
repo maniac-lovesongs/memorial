@@ -19,20 +19,23 @@ const WebsiteList = (input) => {
             setModelListenerId(null);
         }
     }, []);
+    
     const makeList = () => {
         const items = [new WebsiteCardModel("plainwater.com", plainwaterImg, "https://plainwater.com"),
         new WebsiteCardModel("guyana-cricket.com", guyanaCricketImg, "https://guyana-cricket.com"),
-        new WebsiteCardModel("thegonsalves.com",theGonsalvesImg, "https://thegonsalves.com")
+        new WebsiteCardModel("thegonsalves.com", theGonsalvesImg, "https://thegonsalves.com")
         ];
 
         return items.map((c, i) => {
             return <WebsiteCard
                 model={input.model}
                 websiteName={c.name}
+                key={i}
                 image={c.image}
             />
         })
-    }
+    };
+
     return (
         <div className="websitelist-container">
             {makeList()}

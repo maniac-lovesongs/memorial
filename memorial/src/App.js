@@ -1,8 +1,10 @@
 import logo from './logo.svg';
 import { Route, Routes, useParams } from "react-router-dom";
-import Landing from "./components/Landing/Landing.js";
+import Website from "./components/Website/Website.js";
 import AppModel from "./models/App/AppModel.js";
+import bg from "./imgs/bg.jpeg";
 import './App.css';
+import { Input } from '@mui/material';
 
 const app_model = new AppModel(); 
 
@@ -16,11 +18,11 @@ const app_model = new AppModel();
 function App() {
   return (
     <div className="App">
-      <Landing
-        model={app_model}
-      />
-      <Routes>
-      </Routes>
+        <Routes>
+          <Route path="/"
+          element={<Website model={app_model} />}
+          />
+        </Routes>
     </div>
   );
 }

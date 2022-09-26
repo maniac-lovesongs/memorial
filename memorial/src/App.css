@@ -38,5 +38,8 @@
 }
 
 body{
-  background-color: #eff2f7;
+  background-color: blue;
+  background-image: url("./imgs/bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
