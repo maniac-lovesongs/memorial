@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-//import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
 import LandingLogo from "./LandingLogo/LandingLogo.js";
 import WebsiteList from '../WebsiteList/WebsiteList.js';
 import "./Landing.scss";
@@ -17,16 +16,20 @@ const Landing = (input) => {
         }
     }, []);
     
-
     return (
         <div className="landing-container">
-            <LandingLogo 
-                model={input.model}
-                string="Norman Peter Gonsalves"
-            />
-            <WebsiteList
-                model={input.model}
-            />
+            <div className="landing-container-inner-wrapper">
+                <LandingLogo
+                    isAlive={input.isAlive}
+                    birthday={input.birthday}
+                    deathday={input.deathday}
+                    model={input.model}
+                    string="Norman Peter Gonsalves"
+                />
+                <WebsiteList
+                    model={input.model}
+                />
+            </div>
         </div>
     );
 }

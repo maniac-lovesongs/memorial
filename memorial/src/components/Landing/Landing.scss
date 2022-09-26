@@ -10,4 +10,14 @@
     width: 100vw;
     height: 100vh; 
     flex-direction: column;
+
+
+    background-image: url("../../imgs/bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .landing-container-inner-wrapper{
+        position: absolute;
+        top: 0; 
+    }
 }

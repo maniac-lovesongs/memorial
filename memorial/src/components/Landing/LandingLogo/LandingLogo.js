@@ -26,13 +26,26 @@ const LandingLogo = (input) => {
         });
     };
     
+    const determineTopHeading = () => {
+        if (input.isAlive)
+            return <h4>Collection of Websites of</h4>
+        else return <h4>In Loving Memory of</h4>
+    }
+
+    const determineBottomHeading = () => {
+        if (input.isAlive)
+            return null;
+
+        return <h4>{input.birthday} - {input.deathday}</h4>
+    }
+
     return (
         <div className="landinglogo-container"
             data-string={input.string}>
-            <h4>In Loving Memory of</h4>
-            {makeChars()}
+            {determineTopHeading()}
+            <div className="chars">{makeChars()}</div>
             <h3>Engineer. Cricket Lover. Grandfather. Father</h3>
-            <h4>July 26 1953 - 2022</h4>
+            {determineBottomHeading()}
         </div>
     );
 }

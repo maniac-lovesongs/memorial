@@ -38,8 +38,6 @@
 }
 
 body{
-  background-color: blue;
-  background-image: url("./imgs/bg.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: white;
+
 }

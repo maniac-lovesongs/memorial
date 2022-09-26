@@ -20,6 +20,9 @@ const Website = (input) => {
     return (
         <div className="website-container">
             <Landing 
+                isAlive={true}
+                birthday={null}
+                deathday={null}
                 model={input.model}
             />
         </div>
