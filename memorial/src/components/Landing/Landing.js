@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import LandingLogo from "../LandingLogo/LandingLogo.js";
 import FadingHorizontalRule from "../FadingHorizontalRule/FadingHorizontalRule.js";
+import WebsiteList from '../WebsiteList/WebsiteList.js';
 import "./Landing.scss";
 
 const Landing = (input) => {
@@ -22,6 +23,12 @@ const Landing = (input) => {
             <LandingLogo 
                 model={input.model}
                 string="Norman Peter Gonsalves"
+            />
+            <FadingHorizontalRule
+                model={input.model}
+            />
+            <WebsiteList
+                model={input.model}
             />
             <FadingHorizontalRule
                 model={input.model}
