@@ -1,5 +1,9 @@
 .navbar-container{
-    height: 5vh; 
+    height: 4vh; 
     width: 100vw;
     background-color: rgba(0, 46, 79, 0.9);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.5em;
 }

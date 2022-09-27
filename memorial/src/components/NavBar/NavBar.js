@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import "./NavBar.scss";
 
@@ -18,16 +18,19 @@ const NavBar = (input) => {
     
     const iconStyles = {
         color: "rgba(255, 255, 255, 0.7)",
-        marginTop: "8px"
+        backgroundColor: "rgba(255,255,255,0.10)",
+        padding: "5px",
+        cursor: "pointer"
     };
 
     return (
         <div className="navbar-container">
-            <DragHandleIcon
-                sx={iconStyles} />
+            <div className='left-col'>
+                <DragHandleIcon
+                    sx={iconStyles} />
+            </div>
         </div>
     );
 }
 
 export default NavBar;
-/***************************************************************/
