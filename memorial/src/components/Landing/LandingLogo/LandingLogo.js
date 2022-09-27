@@ -44,7 +44,7 @@ const LandingLogo = (input) => {
             data-string={input.string}>
             {determineTopHeading()}
             <div className="chars">{makeChars()}</div>
-            <h3>Engineer. Cricket Lover. Grandfather. Father</h3>
+            <h3>Engineer<b>.</b> Cricket Lover<b>.</b> Grandfather<b>.</b> Father</h3>
             {determineBottomHeading()}
         </div>
     );

@@ -21,7 +21,7 @@ const Website = (input) => {
         <div className="website-container">
             <Landing 
                 isAlive={true}
-                birthday={null}
+                birthday={"July 26, 1957"}
                 deathday={null}
                 model={input.model}
             />

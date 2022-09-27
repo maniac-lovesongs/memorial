@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import WebsiteCard from "../WebsiteCard/WebsiteCard.js";
+import WebsiteCard from "./WebsiteCard/WebsiteCard.js";
 import WebsiteCardModel from '../../models/WebsiteCard/WebsiteCardModel.js';
 import guyanaCricketImg from "../../imgs/guyana_cricket.png";
 import plainwaterImg from "../../imgs/plainwater.png";

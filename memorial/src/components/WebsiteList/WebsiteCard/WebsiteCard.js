@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import "./WebsiteCard.scss";
-import { fontFamily } from '@mui/system';
 
 const WebsiteCard = (input) => {
 
@@ -28,8 +27,8 @@ const WebsiteCard = (input) => {
     };
 
     const cardContentStyles = {
-        fontFamily: "'Montserrat', sans-serif",
-        fontWeight: "300",
+     //   fontFamily: "'Montserrat', sans-serif",
+      //  fontWeight: "800",
         fontSize: "0.9em",
         padding: "2em",
         textTransform: "uppercase"
