@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import NavBar from "../NavBar/NavBar.js";
 import Landing from "../Landing/Landing.js";
 import "./Website.scss";
 
@@ -19,6 +20,9 @@ const Website = (input) => {
 
     return (
         <div className="website-container">
+            <NavBar
+                model={input.model}
+            />
             <Landing 
                 isAlive={true}
                 birthday={"July 26, 1957"}

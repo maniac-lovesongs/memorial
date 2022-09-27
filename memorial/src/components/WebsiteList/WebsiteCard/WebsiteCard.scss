@@ -1,4 +1,10 @@
 .websitecard-container{
     margin: 1em; 
     cursor: pointer;   
+    .website-name{
+        background-color: rgba(0, 46, 79, 0.06);
+        padding: 0.8rem;
+        border-radius: 5px;
+        margin-top: -0.5em !important; 
+    }
 }

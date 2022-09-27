@@ -31,7 +31,9 @@ const WebsiteCard = (input) => {
       //  fontWeight: "800",
         fontSize: "0.9em",
         padding: "2em",
-        textTransform: "uppercase"
+        textTransform: "uppercase",
+        backgroundColor: "white",
+        color: "rgb(0, 46, 79)"
     };
 
     const cardStyles = {
@@ -59,7 +61,7 @@ const WebsiteCard = (input) => {
             <CardContent
                 sx={cardContentStyles}
             >
-                {input.websiteName}
+                <div className="website-name">{input.websiteName}</div>
             </CardContent>
             </Card>
         </a>
