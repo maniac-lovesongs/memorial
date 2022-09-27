@@ -6,6 +6,15 @@
     flex-wrap: wrap;
     width: 100vw; 
     margin-top: 15vh; 
+
+    .grow {
+        transition: all .25s ease-in-out;
+    }
+    
+    .grow:hover {
+        transform: scale(1.15);
+    }
+
     a{
         &:link, &:visited, &:active{
             text-decoration: none;

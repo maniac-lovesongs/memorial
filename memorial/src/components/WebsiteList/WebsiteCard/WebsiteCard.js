@@ -53,7 +53,7 @@ const WebsiteCard = (input) => {
         <a href={input.link}>
         <Card
             sx={cardStyles}
-            className="websitecard-container">
+            className="websitecard-container grow">
             <CardMedia
                 sx={cardMediaStyles}
                 image={input.image}

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import DragHandleIcon from '@mui/icons-material/DragHandle';
 import "./NavBar.scss";
 
 const NavBar = (input) => {
@@ -15,9 +16,15 @@ const NavBar = (input) => {
         }
     }, []);
     
+    const iconStyles = {
+        color: "rgba(255, 255, 255, 0.7)",
+        marginTop: "8px"
+    };
 
     return (
         <div className="navbar-container">
+            <DragHandleIcon
+                sx={iconStyles} />
         </div>
     );
 }
