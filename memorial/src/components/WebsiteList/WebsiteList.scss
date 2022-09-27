@@ -6,4 +6,9 @@
     flex-wrap: wrap;
     width: 100vw; 
     margin-top: 20vh; 
+    a{
+        &:link, &:visited, &:active{
+            text-decoration: none;
+        }
+    }
 }

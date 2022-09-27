@@ -21,10 +21,20 @@ const WebsiteList = (input) => {
     }, []);
     
     const makeList = () => {
-        const items = [new WebsiteCardModel("plainwater.com", plainwaterImg, "https://plainwater.com"),
-        new WebsiteCardModel("guyana-cricket.com", guyanaCricketImg, "https://guyana-cricket.com"),
-        new WebsiteCardModel("thegonsalves.com", theGonsalvesImg, "https://thegonsalves.com")
-        ];
+        
+        const plainwaterDotCom = new WebsiteCardModel("plainwater.com",
+            plainwaterImg,
+            "https://plainwater.com"); 
+        const guyanaCricketDotCom = new WebsiteCardModel("guyana-cricket.com",
+            guyanaCricketImg,
+            "https://guyana-cricket.com");
+        const theGonsavlesDotCom = new WebsiteCardModel("thegonsalves.com",
+            theGonsalvesImg,
+            "https://thegonsalves.com");
+        
+        const items = [theGonsavlesDotCom,
+            guyanaCricketDotCom,
+            plainwaterDotCom];
 
         return items.map((c, i) => {
             return <WebsiteCard

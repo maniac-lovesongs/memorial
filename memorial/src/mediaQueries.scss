@@ -1,19 +1,25 @@
 @media (min-width: 300px) and (max-width: 480px) {
     /* … */
+    // Smartphones
     .websitelist-container{
-        margin-top: 1.2rem; 
+        margin-top: -0.5rem !important; 
     }
     .landing-container-inner-wrapper{
         padding: 0.5rem; 
     }
     .landinglogo-container{
+        .chars{
+            margin-top: -10px; 
+        }
         h3{
-            margin-top: 0em; 
+            margin-top: 15px !important; 
+            font-size: 0.7rem !important; 
         }
     }
 }
 
 @media (min-width: 451px) and (max-width: 1024px){
+    // Tablets
     .websitelist-container {
             margin-top: 35vh;
         }
@@ -31,6 +37,7 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2.5) {
     /* CSS */
+    // Surface Duo
     .websitelist-container {
             margin-top: 1.2rem;
         }

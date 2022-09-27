@@ -20,9 +20,9 @@ const WebsiteCard = (input) => {
     
 
     const cardMediaStyles = {
-        height: "200px",
-        margin: '1em',
-        borderRadius: '5px',
+        height: "150px",
+      //  margin: '1em',
+      //  borderRadius: '5px',
         marginBottom: '0em'
     };
 

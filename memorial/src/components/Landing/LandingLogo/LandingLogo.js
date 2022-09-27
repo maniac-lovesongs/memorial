@@ -28,7 +28,7 @@ const LandingLogo = (input) => {
     
     const determineTopHeading = () => {
         if (input.isAlive)
-            return <h4>Collection of Websites of</h4>
+            return <h4>Collection of Websites by</h4>
         else return <h4>In Loving Memory of</h4>
     }
 
@@ -44,7 +44,7 @@ const LandingLogo = (input) => {
             data-string={input.string}>
             {determineTopHeading()}
             <div className="chars">{makeChars()}</div>
-            <h3>Engineer<b>.</b> Cricket Lover<b>.</b> Grandfather<b>.</b> Father</h3>
+            <h3>Engineer<b>.</b> Cricket Lover<b>.</b> Husband<b>.</b> Grandfather<b>.</b> Father<b>.</b></h3>
             {determineBottomHeading()}
         </div>
     );
