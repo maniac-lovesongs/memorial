@@ -32,6 +32,7 @@ const WebsiteList = (input) => {
                 websiteName={c.name}
                 key={i}
                 image={c.image}
+                link={c.link}
             />
         })
     };

@@ -48,6 +48,7 @@ const WebsiteCard = (input) => {
         left: "-10px"
     };
     return (
+        <a href={input.link}>
         <Card
             sx={cardStyles}
             className="websitecard-container">
@@ -59,9 +60,9 @@ const WebsiteCard = (input) => {
                 sx={cardContentStyles}
             >
                 {input.websiteName}
-
             </CardContent>
-        </Card>
+            </Card>
+        </a>
     );
 }
 
