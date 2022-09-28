@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-memorial-dev-161049-authRole",
+      "UnauthRoleArn": "arn:aws:iam::972319794754:role/amplify-memorial-dev-161049-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::972319794754:role/amplify-memorial-dev-161049-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-memorial-dev-161049-deployment",
+      "UnauthRoleName": "amplify-memorial-dev-161049-unauthRole",
+      "StackName": "amplify-memorial-dev-161049",
+      "StackId": "arn:aws:cloudformation:us-west-2:972319794754:stack/amplify-memorial-dev-161049/df97d190-3ea8-11ed-85db-02e2f1427cf7",
+      "AmplifyAppId": "d1chpkg67ely2p"
+    },
+    "categories": {
+      "auth": {
+        "memoriale1f45e70": {}
+      }
+    }
+  }
+}
